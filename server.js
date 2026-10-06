@@ -36,7 +36,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
 // app.use('/api/products', require('./server/routes/products'));
 // ==========================================================
 app.use('/api/posts', require('./server/routes/posts'));
-
+app.use('/api/products', require('./server/routes/products'));
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({
